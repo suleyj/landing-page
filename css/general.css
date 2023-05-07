@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,6 +138,7 @@ table {
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
@@ -144,14 +152,18 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 .grid {
+  display: -ms-grid;
   display: grid;
   gap: 10rem;
 }
 
 .grid--center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .grid--2col {
+  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -165,6 +177,7 @@ h3 {
   border-radius: 50px;
   font-size: 1.5rem;
   font-weight: bold;
+  -webkit-box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -174,6 +187,7 @@ h3 {
   text-decoration: none;
   color: black;
   background-color: #fff;
+  -webkit-box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.05);
   padding: 1.3rem 5rem;
   border-radius: 50px;
